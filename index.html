@@ -2,190 +2,182 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Audit Sobriété Numérique – Sopra Steria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audit – Commande Big Mac McDonald's</title>
   <style>
+    /* Respect des bonnes pratiques d’écoconception */
+
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
       background-color: #f4f4f4;
-      padding: 40px;
-      color: #333;
+      color: #212121;
     }
 
     .container {
-      max-width: 900px;
-      background-color: #fff;
-      padding: 30px;
+      max-width: 860px;
       margin: auto;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      background-color: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+    }
+
+    h1, h2, h3 {
+      color: #b30000; /* Teinte rouge douce pour rappeler McDonald's */
     }
 
     h1 {
       text-align: center;
-      color: #2c3e50;
-      margin-bottom: 30px;
+      font-size: 1.8rem;
     }
 
     h2 {
-      color: #1a5276;
-      margin-top: 30px;
-      border-top: 2px solid #ccc;
-      padding-top: 20px;
+      margin-top: 2rem;
+      border-top: 2px solid #ddd;
+      padding-top: 1rem;
+      font-size: 1.4rem;
     }
 
     h3 {
-      margin-top: 20px;
-      color: #21618c;
+      margin-top: 1.2rem;
+      font-size: 1.2rem;
     }
 
     p, li {
-      font-size: 16px;
+      font-size: 1rem;
       line-height: 1.6;
     }
 
     ul {
-      margin-left: 20px;
-    }
-
-    .highlight {
-      background-color: #e8f8f5;
-      padding: 12px;
-      border-left: 4px solid #148f77;
-      margin-top: 20px;
-    }
-
-    .section-break {
-      height: 2px;
-      background-color: #ddd;
-      margin: 40px 0;
+      padding-left: 1.2rem;
     }
 
     .strong-points {
-      background-color: #d4edda;
-      border-left: 5px solid #28a745;
-      padding: 10px 15px;
-      margin-top: 10px;
-    }
-
-    .blue-points {
-      background-color: #bcc3ea;
-      border-left: 5px solid #6689d4;
-      padding: 10px 15px;
-      margin-top: 10px;
+      background-color: #e6f4ea;
+      border-left: 4px solid #28a745;
+      padding: 1rem;
+      margin-top: 1rem;
     }
 
     .weak-points {
-      background-color: #f8d7da;
-      border-left: 5px solid #dc3545;
-      padding: 10px 15px;
-      margin-top: 10px;
+      background-color: #fbeaea;
+      border-left: 4px solid #dc3545;
+      padding: 1rem;
+      margin-top: 1rem;
     }
 
     .recommendation {
-      margin-top: 10px;
-      padding: 10px 15px;
-      background-color: #f0f9ff;
-      border-left: 4px solid #3498db;
+      background-color: #eaf4fb;
+      border-left: 4px solid #007bff;
+      padding: 1rem;
+      margin: 1rem 0;
+    }
+
+    .section-break {
+      margin: 2rem 0;
+      border-top: 1px solid #ccc;
     }
 
     footer {
+      font-size: 0.9rem;
       text-align: center;
-      margin-top: 40px;
-      font-size: 14px;
-      color: #777;
+      margin-top: 3rem;
+      padding-top: 1rem;
       border-top: 1px solid #ccc;
-      padding-top: 20px;
+      color: #555;
+    }
+
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      .container {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Audit de Sobriété Numérique – Sopra Steria</h1>
+    <h1>Audit – Commande d’un menu Big Mac sur le site McDonald’s France</h1>
 
     <h2>1. Introduction</h2>
-    <p>La sobriété numérique est devenue un enjeu central dans les stratégies de transition écologique des entreprises du numérique. Cet audit vise à analyser l'engagement et les pratiques de Sopra Steria, une grande entreprise de services numériques française, en matière de sobriété numérique. L’objectif est d’évaluer l’impact environnemental de ses services numériques tout en identifiant les actions d'amélioration possibles. Dans un contexte où le numérique représente près de 4% des émissions mondiales de gaz à effet de serre, il est essentiel que les ESN jouent un rôle moteur. Cet audit suit une grille d’analyse structurée : présentation, audit technique, analyse des forces et faiblesses, recommandations, et conclusion générale.</p>
-
+    <p>Ce projet vise à auditer un service numérique grand public en tenant compte des enjeux de sobriété numérique. L’unité fonctionnelle choisie est la commande d’un menu Big Mac à emporter via le site web de McDonald’s France. Cette action implique plusieurs composants numériques : affichage du menu, sélection du produit, interaction avec le panier, authentification, paiement et confirmation. L’objectif est d’évaluer la performance environnementale, l’accessibilité et la qualité globale de ce parcours utilisateur, en lien avec l’ODD 12 : consommation et production responsables.</p>
 
     <h2>2. Présentation du service</h2>
-    <p>Sopra Steria est une entreprise de services numériques implantée dans plus de 30 pays, avec plus de 50 000 collaborateurs. Elle propose des services de conseil, d'intégration de systèmes, de cybersécurité et d'externalisation IT pour de nombreux secteurs (banque, santé, services publics, etc.). Le service audité ici concerne ses offres de développement applicatif pour les grandes entreprises. Ce service implique l’utilisation intensive de data centers, d’infrastructures cloud, d’outils collaboratifs et de postes de travail variés. C’est donc un domaine fortement consommateur de ressources numériques, mais également stratégique pour intégrer les principes d’écoconception et de sobriété.</p>
-
+    <p>Le site McDonald’s France permet aux utilisateurs de commander leur repas en ligne pour le retirer en restaurant ou en drive. Ce service répond à un besoin d’optimisation du temps, de personnalisation de commande et de fluidité du parcours client. La fonctionnalité auditée ici est l’achat d’un menu Big Mac, un produit phare de la marque, sur le site desktop. Cette commande implique des interactions visuelles, des scripts et une connexion au système de paiement.</p>
 
     <h2>3. Audit technique</h2>
-    <div class="blue-points">
-        <h3>Écoconception</h3>
-        <ul>
-          <li>Poids moyen d’une page produit : 1,8 Mo</li>
-          <li>Complexité des interfaces : moyenne (3 niveaux de navigation)</li>
-          <li>Faiblesses détectées : redondance d’images, absence de lazy loading</li>
-          <li>Note EcoIndex : C (55/100)</li>
-        </ul>
-    </div>
 
-    <div class="blue-points">
-        <h3>Accessibilité</h3>
-        <ul>
-          <li>Score Lighthouse : 82/100</li>
-          <li>Navigation clavier : fonctionnelle mais perfectible sur les menus déroulants</li>
-          <li>Présence des attributs ARIA : partielle (manque sur certains composants dynamiques)</li>
-        </ul>
-    </div>
+    <h3>Écoconception</h3>
+    <ul>
+      <li>Poids moyen de la page produit : 3,2 Mo</li>
+      <li>Complexité de navigation : élevée (5 étapes, nombreux éléments dynamiques)</li>
+      <li>Faiblesses détectées : absence de lazy loading, images non compressées</li>
+      <li>Note EcoIndex : D (42/100)</li>
+    </ul>
 
-    <div class="blue-points">
-        <h3>Qualité</h3>
-        <ul>
-          <li>État du SEO : correct (balisage HTML structuré, balises titres présentes)</li>
-          <li>Responsive design : oui (mobile-first bien géré)</li>
-        </ul>
-    </div>
+    <h3>Accessibilité</h3>
+    <ul>
+      <li>Score Lighthouse accessibilité : 68/100</li>
+      <li>Navigation clavier : possible mais non fluide dans le panier</li>
+      <li>Attributs ARIA : partiels, certains composants ne sont pas décrits</li>
+    </ul>
+
+    <h3>Qualité</h3>
+    <ul>
+      <li>SEO : bon (titre, balises meta présents, URLs claires)</li>
+      <li>Responsive design : oui, site bien adapté mobile/tablette</li>
+    </ul>
 
     <h2>4. Points forts et faibles</h2>
 
     <div class="strong-points">
       <h3>Points forts :</h3>
       <ul>
-        <li>Hébergement des plateformes cloud alimenté à 100% par des énergies renouvelables</li>
-        <li>Bonne politique de formation interne sur l’écoconception</li>
-        <li>Respect global des principes de responsive et d’accessibilité</li>
-        <li>Participation à des projets de recherche sur le numérique responsable</li>
+        <li>Responsive design bien implémenté pour tous les appareils</li>
+        <li>Bon référencement naturel (SEO)</li>
+        <li>Service fluide et rapide pour l'utilisateur final</li>
+        <li>Commande sécurisée avec options de personnalisation du produit</li>
       </ul>
     </div>
 
     <div class="weak-points">
       <h3>Points faibles :</h3>
       <ul>
-        <li>Pages trop lourdes sur certaines interfaces métiers</li>
-        <li>Composants web non optimisés pour le SEO sur certains projets clients</li>
-        <li>Accessibilité incomplète sur les formulaires dynamiques</li>
-        <li>Manque d’outils systématiques de mesure de performance énergétique</li>
+        <li>Poids des pages trop élevé (3 Mo+), impact carbone non négligeable</li>
+        <li>Accessibilité incomplète (utilisation du clavier et ARIA partielle)</li>
+        <li>Pas de feedback visible sur l’empreinte écologique de la commande</li>
+        <li>Scripts JavaScript très nombreux, complexifiant la navigation</li>
       </ul>
     </div>
-
 
     <h2>5. Recommandations</h2>
 
     <div class="recommendation">
-      <strong>1. Réduire le poids des pages :</strong> En optimisant les images (WebP), en activant le lazy loading, et en réduisant les scripts inutiles, Sopra Steria pourrait alléger ses pages de 30% en moyenne.
+      <strong>1. Réduire le poids des pages :</strong> Compresser les images (WebP), activer le lazy loading et limiter les polices externes peut alléger chaque page de plus de 1 Mo.
     </div>
 
     <div class="recommendation">
-      <strong>2. Automatiser les audits EcoIndex :</strong> Intégrer un outil comme EcoIndex API dans la CI/CD permettrait d’automatiser les vérifications d’écoconception et d’éviter les régressions.
+      <strong>2. Intégrer EcoIndex dans le cycle de développement :</strong> Utiliser un outil comme Ecoindex CLI pour évaluer automatiquement les performances environnementales lors des mises à jour.
     </div>
 
     <div class="recommendation">
-      <strong>3. Améliorer l’accessibilité dynamique :</strong> L’intégration systématique des attributs ARIA et la vérification via des tests manuels sur clavier sont nécessaires pour garantir une expérience inclusive.
+      <strong>3. Améliorer l’accessibilité :</strong> Ajouter les attributs ARIA manquants, faciliter la navigation clavier dans le tunnel d’achat et tester avec des outils comme Wave et Lighthouse.
     </div>
 
     <div class="recommendation">
-      <strong>4. Ajouter des indicateurs publics :</strong> Publier des KPI de sobriété numérique par application renforcerait la transparence et inciterait les équipes à améliorer leurs performances.
+      <strong>4. Afficher un indicateur d’impact environnemental :</strong> Ajouter un petit message indiquant l’impact estimé de la commande (ex : équivalent CO₂ du parcours numérique) sensibiliserait les utilisateurs.
     </div>
-
 
     <h2>6. Conclusion</h2>
-    <p>L’audit de Sobriété Numérique de Sopra Steria montre une entreprise engagée et déjà active sur de nombreux leviers. Toutefois, des marges de progression demeurent, notamment dans l’uniformisation des pratiques et l’optimisation des interfaces. Grâce à des recommandations simples à mettre en place, Sopra Steria peut encore renforcer son rôle de leader dans le numérique responsable. La sensibilisation des clients et l'automatisation des outils de contrôle seront des leviers essentiels pour les années à venir.</p>
+    <p>Ce service numérique remplit bien son objectif commercial et fonctionnel, mais présente un coût environnemental qu’il serait possible de réduire. En intégrant davantage les principes de sobriété numérique, McDonald’s France pourrait diminuer l’impact de ses commandes en ligne tout en renforçant l’accessibilité pour tous. Une refonte partielle du parcours d’achat, alliée à des outils de mesure et de sensibilisation, permettrait d’en faire un exemple de service numérique plus responsable.</p>
 
     <footer>
-      Conception sobre, respect de l’environnement et de l’accessibilité pour une meilleure expérience utilisateur chez Sopra Steria.
+      Conception sobre, respect de l’environnement et de l’accessibilité pour une meilleure expérience utilisateur chez McDonald’s.
     </footer>
   </div>
 </body>
