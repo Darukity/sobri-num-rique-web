@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Audit Sobriété Numérique – Sopra Steria</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 40px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      background-color: #fff;
+      padding: 30px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #1a5276;
+      margin-top: 30px;
+      border-top: 2px solid #ccc;
+      padding-top: 20px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      color: #21618c;
+    }
+
+    p, li {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    .highlight {
+      background-color: #e8f8f5;
+      padding: 12px;
+      border-left: 4px solid #148f77;
+      margin-top: 20px;
+    }
+
+    .section-break {
+      height: 2px;
+      background-color: #ddd;
+      margin: 40px 0;
+    }
+
+    .strong-points {
+      background-color: #d4edda;
+      border-left: 5px solid #28a745;
+      padding: 10px 15px;
+      margin-top: 10px;
+    }
+
+    .blue-points {
+      background-color: #bcc3ea;
+      border-left: 5px solid #6689d4;
+      padding: 10px 15px;
+      margin-top: 10px;
+    }
+
+    .weak-points {
+      background-color: #f8d7da;
+      border-left: 5px solid #dc3545;
+      padding: 10px 15px;
+      margin-top: 10px;
+    }
+
+    .recommendation {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #f0f9ff;
+      border-left: 4px solid #3498db;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+      border-top: 1px solid #ccc;
+      padding-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Audit de Sobriété Numérique – Sopra Steria</h1>
+
+    <h2>1. Introduction</h2>
+    <p>La sobriété numérique est devenue un enjeu central dans les stratégies de transition écologique des entreprises du numérique. Cet audit vise à analyser l'engagement et les pratiques de Sopra Steria, une grande entreprise de services numériques française, en matière de sobriété numérique. L’objectif est d’évaluer l’impact environnemental de ses services numériques tout en identifiant les actions d'amélioration possibles. Dans un contexte où le numérique représente près de 4% des émissions mondiales de gaz à effet de serre, il est essentiel que les ESN jouent un rôle moteur. Cet audit suit une grille d’analyse structurée : présentation, audit technique, analyse des forces et faiblesses, recommandations, et conclusion générale.</p>
+
+
+    <h2>2. Présentation du service</h2>
+    <p>Sopra Steria est une entreprise de services numériques implantée dans plus de 30 pays, avec plus de 50 000 collaborateurs. Elle propose des services de conseil, d'intégration de systèmes, de cybersécurité et d'externalisation IT pour de nombreux secteurs (banque, santé, services publics, etc.). Le service audité ici concerne ses offres de développement applicatif pour les grandes entreprises. Ce service implique l’utilisation intensive de data centers, d’infrastructures cloud, d’outils collaboratifs et de postes de travail variés. C’est donc un domaine fortement consommateur de ressources numériques, mais également stratégique pour intégrer les principes d’écoconception et de sobriété.</p>
+
+
+    <h2>3. Audit technique</h2>
+    <div class="blue-points">
+        <h3>Écoconception</h3>
+        <ul>
+          <li>Poids moyen d’une page produit : 1,8 Mo</li>
+          <li>Complexité des interfaces : moyenne (3 niveaux de navigation)</li>
+          <li>Faiblesses détectées : redondance d’images, absence de lazy loading</li>
+          <li>Note EcoIndex : C (55/100)</li>
+        </ul>
+    </div>
+
+    <div class="blue-points">
+        <h3>Accessibilité</h3>
+        <ul>
+          <li>Score Lighthouse : 82/100</li>
+          <li>Navigation clavier : fonctionnelle mais perfectible sur les menus déroulants</li>
+          <li>Présence des attributs ARIA : partielle (manque sur certains composants dynamiques)</li>
+        </ul>
+    </div>
+
+    <div class="blue-points">
+        <h3>Qualité</h3>
+        <ul>
+          <li>État du SEO : correct (balisage HTML structuré, balises titres présentes)</li>
+          <li>Responsive design : oui (mobile-first bien géré)</li>
+        </ul>
+    </div>
+
+    <h2>4. Points forts et faibles</h2>
+
+    <div class="strong-points">
+      <h3>Points forts :</h3>
+      <ul>
+        <li>Hébergement des plateformes cloud alimenté à 100% par des énergies renouvelables</li>
+        <li>Bonne politique de formation interne sur l’écoconception</li>
+        <li>Respect global des principes de responsive et d’accessibilité</li>
+        <li>Participation à des projets de recherche sur le numérique responsable</li>
+      </ul>
+    </div>
+
+    <div class="weak-points">
+      <h3>Points faibles :</h3>
+      <ul>
+        <li>Pages trop lourdes sur certaines interfaces métiers</li>
+        <li>Composants web non optimisés pour le SEO sur certains projets clients</li>
+        <li>Accessibilité incomplète sur les formulaires dynamiques</li>
+        <li>Manque d’outils systématiques de mesure de performance énergétique</li>
+      </ul>
+    </div>
+
+
+    <h2>5. Recommandations</h2>
+
+    <div class="recommendation">
+      <strong>1. Réduire le poids des pages :</strong> En optimisant les images (WebP), en activant le lazy loading, et en réduisant les scripts inutiles, Sopra Steria pourrait alléger ses pages de 30% en moyenne.
+    </div>
+
+    <div class="recommendation">
+      <strong>2. Automatiser les audits EcoIndex :</strong> Intégrer un outil comme EcoIndex API dans la CI/CD permettrait d’automatiser les vérifications d’écoconception et d’éviter les régressions.
+    </div>
+
+    <div class="recommendation">
+      <strong>3. Améliorer l’accessibilité dynamique :</strong> L’intégration systématique des attributs ARIA et la vérification via des tests manuels sur clavier sont nécessaires pour garantir une expérience inclusive.
+    </div>
+
+    <div class="recommendation">
+      <strong>4. Ajouter des indicateurs publics :</strong> Publier des KPI de sobriété numérique par application renforcerait la transparence et inciterait les équipes à améliorer leurs performances.
+    </div>
+
+
+    <h2>6. Conclusion</h2>
+    <p>L’audit de Sobriété Numérique de Sopra Steria montre une entreprise engagée et déjà active sur de nombreux leviers. Toutefois, des marges de progression demeurent, notamment dans l’uniformisation des pratiques et l’optimisation des interfaces. Grâce à des recommandations simples à mettre en place, Sopra Steria peut encore renforcer son rôle de leader dans le numérique responsable. La sensibilisation des clients et l'automatisation des outils de contrôle seront des leviers essentiels pour les années à venir.</p>
+
+    <footer>
+      Conception sobre, respect de l’environnement et de l’accessibilité pour une meilleure expérience utilisateur chez Carrefour.
+    </footer>
+  </div>
+</body>
+</html>
