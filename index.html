@@ -4,101 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Audit – Commande Big Mac McDonald's</title>
-  <style>
-    /* Respect des bonnes pratiques d’écoconception */
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 2rem;
-      background-color: #f4f4f4;
-      color: #212121;
-    }
-
-    .container {
-      max-width: 860px;
-      margin: auto;
-      background-color: #ffffff;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
-    }
-
-    h1, h2, h3 {
-      color: #b30000; /* Teinte rouge douce pour rappeler McDonald's */
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 1.8rem;
-    }
-
-    h2 {
-      margin-top: 2rem;
-      border-top: 2px solid #ddd;
-      padding-top: 1rem;
-      font-size: 1.4rem;
-    }
-
-    h3 {
-      margin-top: 1.2rem;
-      font-size: 1.2rem;
-    }
-
-    p, li {
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-    }
-
-    .strong-points {
-      background-color: #e6f4ea;
-      border-left: 4px solid #28a745;
-      padding: 1rem;
-      margin-top: 1rem;
-    }
-
-    .weak-points {
-      background-color: #fbeaea;
-      border-left: 4px solid #dc3545;
-      padding: 1rem;
-      margin-top: 1rem;
-    }
-
-    .recommendation {
-      background-color: #eaf4fb;
-      border-left: 4px solid #007bff;
-      padding: 1rem;
-      margin: 1rem 0;
-    }
-
-    .section-break {
-      margin: 2rem 0;
-      border-top: 1px solid #ccc;
-    }
-
-    footer {
-      font-size: 0.9rem;
-      text-align: center;
-      margin-top: 3rem;
-      padding-top: 1rem;
-      border-top: 1px solid #ccc;
-      color: #555;
-    }
-
-    @media screen and (max-width: 600px) {
-      body {
-        padding: 1rem;
-      }
-
-      .container {
-        padding: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
@@ -107,77 +13,89 @@
     <h2>1. Introduction</h2>
     <p>Ce projet vise à auditer un service numérique grand public en tenant compte des enjeux de sobriété numérique. L’unité fonctionnelle choisie est la commande d’un menu Big Mac à emporter via le site web de McDonald’s France. Cette action implique plusieurs composants numériques : affichage du menu, sélection du produit, interaction avec le panier, authentification, paiement et confirmation. L’objectif est d’évaluer la performance environnementale, l’accessibilité et la qualité globale de ce parcours utilisateur, en lien avec l’ODD 12 : consommation et production responsables.</p>
 
+    <div class="section-break"></div>
+
     <h2>2. Présentation du service</h2>
     <p>Le site McDonald’s France permet aux utilisateurs de commander leur repas en ligne pour le retirer en restaurant ou en drive. Ce service répond à un besoin d’optimisation du temps, de personnalisation de commande et de fluidité du parcours client. La fonctionnalité auditée ici est l’achat d’un menu Big Mac, un produit phare de la marque, sur le site desktop. Cette commande implique des interactions visuelles, des scripts et une connexion au système de paiement.</p>
 
+    <div class="section-break"></div>
+
     <h2>3. Audit technique</h2>
 
-    <h3>Écoconception</h3>
+    <h3>Écoconception (via EcoIndex)</h3>
     <ul>
-      <li>Poids moyen de la page produit : 3,2 Mo</li>
-      <li>Complexité de navigation : élevée (5 étapes, nombreux éléments dynamiques)</li>
-      <li>Faiblesses détectées : absence de lazy loading, images non compressées</li>
-      <li>Note EcoIndex : D (42/100)</li>
+      <li>Note EcoIndex : <strong>E (38.37/100)</strong></li>
+      <li>Poids total de la page : 3,2 Mo</li>
+      <li>Nombre de requêtes HTTP : 52</li>
+      <li>GES estimés : 2,27 gCO₂e par visite</li>
+      <li>Taille DOM : 1226 éléments</li>
     </ul>
 
-    <h3>Accessibilité</h3>
+    <h3>Accessibilité (via Lighthouse)</h3>
     <ul>
-      <li>Score Lighthouse accessibilité : 68/100</li>
-      <li>Navigation clavier : possible mais non fluide dans le panier</li>
-      <li>Attributs ARIA : partiels, certains composants ne sont pas décrits</li>
+      <li>Score accessibilité : <strong>88/100</strong></li>
+      <li>Bonne lisibilité et présence d’ARIA</li>
+      <li>Problèmes : certains liens peu visibles, zones tactiles trop petites</li>
     </ul>
 
-    <h3>Qualité</h3>
+    <h3>Qualité (Performance & SEO)</h3>
     <ul>
-      <li>SEO : bon (titre, balises meta présents, URLs claires)</li>
-      <li>Responsive design : oui, site bien adapté mobile/tablette</li>
+      <li>Performance : <strong>36/100</strong> (chargement lent, JS lourd)</li>
+      <li>Bonnes pratiques : 93/100</li>
+      <li>SEO : <strong>91/100</strong> (balises bien présentes, URLs propres)</li>
     </ul>
+
+    <div class="section-break"></div>
 
     <h2>4. Points forts et faibles</h2>
 
     <div class="strong-points">
       <h3>Points forts :</h3>
       <ul>
-        <li>Responsive design bien implémenté pour tous les appareils</li>
-        <li>Bon référencement naturel (SEO)</li>
-        <li>Service fluide et rapide pour l'utilisateur final</li>
-        <li>Commande sécurisée avec options de personnalisation du produit</li>
+        <li>Excellent SEO et structure HTML propre</li>
+        <li>Bonne accessibilité générale</li>
+        <li>Expérience utilisateur fluide sur mobile</li>
+        <li>Commande sécurisée avec interface moderne</li>
       </ul>
     </div>
 
     <div class="weak-points">
       <h3>Points faibles :</h3>
       <ul>
-        <li>Poids des pages trop élevé (3 Mo+), impact carbone non négligeable</li>
-        <li>Accessibilité incomplète (utilisation du clavier et ARIA partielle)</li>
-        <li>Pas de feedback visible sur l’empreinte écologique de la commande</li>
-        <li>Scripts JavaScript très nombreux, complexifiant la navigation</li>
+        <li>Page lourde (3 Mo+), donc peu sobre</li>
+        <li>Temps de chargement trop long (LCP > 9s)</li>
+        <li>Absence de lazy loading</li>
+        <li>Navigation clavier encore perfectible</li>
       </ul>
     </div>
+
+    <div class="section-break"></div>
 
     <h2>5. Recommandations</h2>
 
     <div class="recommendation">
-      <strong>1. Réduire le poids des pages :</strong> Compresser les images (WebP), activer le lazy loading et limiter les polices externes peut alléger chaque page de plus de 1 Mo.
+      <strong>1. Réduire le poids des pages :</strong> Compresser les images (WebP), activer le lazy loading et supprimer les scripts inutiles.
     </div>
 
     <div class="recommendation">
-      <strong>2. Intégrer EcoIndex dans le cycle de développement :</strong> Utiliser un outil comme Ecoindex CLI pour évaluer automatiquement les performances environnementales lors des mises à jour.
+      <strong>2. Optimiser le JavaScript :</strong> Diviser les bundles, différer le chargement des scripts non critiques.
     </div>
 
     <div class="recommendation">
-      <strong>3. Améliorer l’accessibilité :</strong> Ajouter les attributs ARIA manquants, faciliter la navigation clavier dans le tunnel d’achat et tester avec des outils comme Wave et Lighthouse.
+      <strong>3. Améliorer l’accessibilité :</strong> Revoir les contrastes, augmenter la taille des zones tactiles et baliser tous les composants dynamiques.
     </div>
 
     <div class="recommendation">
-      <strong>4. Afficher un indicateur d’impact environnemental :</strong> Ajouter un petit message indiquant l’impact estimé de la commande (ex : équivalent CO₂ du parcours numérique) sensibiliserait les utilisateurs.
+      <strong>4. Ajouter un indicateur environnemental :</strong> Informer l’utilisateur de l’impact CO₂ de sa commande renforcerait la sensibilisation.
     </div>
+
+    <div class="section-break"></div>
 
     <h2>6. Conclusion</h2>
-    <p>Ce service numérique remplit bien son objectif commercial et fonctionnel, mais présente un coût environnemental qu’il serait possible de réduire. En intégrant davantage les principes de sobriété numérique, McDonald’s France pourrait diminuer l’impact de ses commandes en ligne tout en renforçant l’accessibilité pour tous. Une refonte partielle du parcours d’achat, alliée à des outils de mesure et de sensibilisation, permettrait d’en faire un exemple de service numérique plus responsable.</p>
+    <p>L’unité fonctionnelle audité présente un parcours utilisateur réussi sur le plan commercial, mais qui reste énergivore. En se conformant aux bonnes pratiques de sobriété numérique, McDonald’s pourrait améliorer l’impact environnemental de son service de commande. Les scores obtenus avec EcoIndex et Lighthouse démontrent l’importance de retravailler la performance, sans sacrifier l’accessibilité ni le SEO.</p>
 
     <footer>
-      Conception sobre, respect de l’environnement et de l’accessibilité pour une meilleure expérience utilisateur chez McDonald’s.
+      Conception sobre, respect de l’environnement et de l’accessibilité pour une meilleure expérience utilisateur chez McDonald's.
     </footer>
   </div>
 </body>
